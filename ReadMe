@@ -1,0 +1,26 @@
+Includes five wrapper classes that are serialized such that they can be viewed and edited inside the inspector.
+
+These include:
+2D Array
+Dictionary
+DateTime
+Hashset
+Queue
+
+
+Serializable2DArray<T> is a generic, Unity-serializable two-dimensional array wrapper. It allows you to store and serialize 2D grid-like data in the Unity Inspector while still maintaining easy 2D array indexing and common utility methods.
+
+SerializableDictionary<TKey, TValue> is a generic class that provides a Unity-serializable dictionary. It enables using dictionaries as serialized fields in the Unity Inspector, ensuring reliable storage and retrieval of key/value pairs during Play Mode and asset serialization.
+
+SerializableDateTime is a Unity-serializable wrapper around the standard System.DateTime struct. It enables safe serialization and editing of date and time information within the Unity Inspector by breaking the date and time into separate fields with validation.
+
+SerializableHashSet<T> is a Unity-serializable collection class that mimics the behavior of a HashSet<T> but stores items in a list for compatibility with Unity serialization.
+
+It ensures uniqueness of items while providing familiar set operations and Unity Inspector support.
+
+
+SerializableQueue<T> is a Unity-serializable queue collection that maintains insertion order and supports serialization in the Unity Inspector.
+
+It preserves the typical behavior of a Queue<T> while using an internal list for Unity-compatible serialization.
+
+
